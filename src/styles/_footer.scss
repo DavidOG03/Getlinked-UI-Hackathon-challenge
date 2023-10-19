@@ -1,0 +1,204 @@
+@use './variables/colors' as *;
+@use './variables/fonts' as *;
+@import './variables/functions' ;
+
+footer{
+    padding: 51px 0 83px 0;
+    background: $footer;
+    position: relative;
+    display: block;
+    z-index: 0;
+
+    .star-one{
+        position: absolute;
+        top: 132px;
+        left: 30.5px;
+        width: 9px;
+        height: 10px;
+        animation: twinkle1 3s ease 0.5s infinite;
+    }
+    
+    .star-two{
+        position: absolute;
+        top: 372px;
+        right: 179px;
+        width: 15px;
+        height: 18px;
+        animation: twinkle1 4s ease 0.75s infinite;
+    }
+   
+    .star-three{
+        position: absolute;
+        top: 591px;
+        right: 82.5px;
+        width: 7px;
+        height: 8px;   
+        animation: twinkle1 1s ease 1s infinite;
+    }
+   
+    .star-four{
+        position: absolute;
+        top: 686px;
+        left: 131.5px;
+        width: 7px;
+        height: 8px;
+        animation: twinkle1 3s ease infinite;
+    }
+    @keyframes twinkle1 {
+        50%{
+            opacity: 0.5;
+            scale: 0.5;
+        }
+    }
+
+    .flare-two{
+        position: absolute;
+        top: -677px;
+        left: -196px;
+        display: none;
+    }
+    .footer{
+        padding-left: 62.5px;
+        padding-bottom: 60px;
+    .footer-head{
+        margin-bottom: 39px;
+        .logo{
+        color: $white;
+        font-size: 20px;
+        font-family: 'ClashDisplay-Bold';
+        font-weight: weight(bold);
+        margin-bottom: 20px;
+        span{
+            color: $headlines;
+        }
+    }
+    p{
+        color: $white;
+        font-size: 12px;
+        line-height: 172.4%;
+        font-weight: weight(regular);
+        font-family: $fontfamily;
+        width: 271px;
+        margin-right: auto;
+    }
+}
+
+    .split{
+        width: 181px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 2rem;
+        span{
+            color: $white;
+            font-size: 12px;
+            line-height: 172.4%;
+            font-weight: weight(regular);
+            font-family: $fontfamily;
+            // display: inline-block;
+        }
+        .line{
+            width: 2px;
+            height: 17px;
+            background: $headlines;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            translate: -50%, 0;
+
+        }
+    }
+    .footer-nav{
+        
+        h5{
+            color: $headlines;
+            font-family: $fontfamily;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 172.4%;
+            padding-bottom: 6px;
+        }
+
+        ul{
+            li{
+                list-style: none;
+                padding-bottom: 12px;
+                a{
+                    text-decoration: none;
+                    color: $white;
+                    font-family: $fontfamily;
+                    font-size: 12px;
+                    font-weight: weight(regular);
+                    line-height: 172.4%;
+                }
+            }
+        }
+    }
+
+    .follow{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 24px;
+        width: 203px;
+        margin-bottom: 61px;
+        &-us{
+            color: $headlines;
+            font-family: $fontfamily;
+            font-size: 12px;
+            font-weight: weight(regular);
+        }
+    }
+    .socials{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: center;
+        img{
+            height: 100%;
+        }
+    }
+
+    .contact{
+        width: 120px;
+        height: 126px;
+        h5{
+            color: $headlines;
+            font-family: $fontfamily;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 172.4%;
+            padding-bottom: 8px;
+        }
+        &-info{
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 22px;
+            .info{
+                display: flex;
+                justify-content: flex-start;
+                gap: 14px;
+                align-items: flex-start;
+                
+                p{
+                    color: $white;
+                    font-family: $fontfamily;
+                    font-size: 12px;
+                    font-weight: weight(regular);
+                    line-height: 157.9%;
+                    display: block;
+                }
+            }
+            
+        }
+    }
+}
+small{
+    display: block;
+    text-align: center;
+    color: $white;
+    font-size: 12px;
+    font-family: $fontfamily;
+}
+}
