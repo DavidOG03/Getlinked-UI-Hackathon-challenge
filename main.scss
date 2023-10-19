@@ -1,0 +1,94 @@
+@use './src/styles/variables/colors' as *;
+
+@import './src/styles/css/clash-display';
+@import './src/styles/header';
+@import './src/styles/body';
+@import './src/styles/footer';
+@import './src/styles/desktop/desktop-body';
+@import './src/styles/desktop/desktop-footer';
+@import './src/styles/contact';
+@import './src/styles/register';
+
+@import './src/styles/variables/colors';
+@import './src/styles/variables/fonts';
+@import './src/styles/variables/functions';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Unica+One&display=swap');
+
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background: $background;
+  position: relative;
+  -webkit-scroll-behaviour: smooth;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.star-one{
+  animation: glow 1s linear 0 infinite;
+}
+
+@keyframes glow {
+  0%{
+    scale: 0.5;
+    opacity: 0.2;
+  }
+  50%{
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba($background, $alpha: 0.02);
+  backdrop-filter: blur(0.5rem);
+}
+
+.home{
+  position: relative;
+}
+
+.load-box{
+  width: 100%;
+  height: 100vh;
+  background: $background;
+  display: grid;
+  place-items: center;
+  .loader{
+    border:0.5rem solid transparent;
+    border-top: 0.5rem solid $white;
+    border-bottom: 0.5rem solid $white;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: transparent;
+    animation: load 2s linear infinite ;
+
+  }
+
+ 
+}
+
+@keyframes load {
+  0%{
+    rotate: 0deg;
+  }
+  100%{
+    rotate: 360deg;
+  }
+}
