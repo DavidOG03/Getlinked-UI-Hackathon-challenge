@@ -1,7 +1,7 @@
 
 # Project Title
 
-Getlinked.ai Landing Page Hackathon Challenge
+[Getlinked.ai Landing Page Hackathon Challenge](https://getlinked-ai-lp-david-og.netlify.app/) 
 
 
 ## Screenshots
