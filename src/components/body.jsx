@@ -1,13 +1,10 @@
-import React from "react";
+/* eslint-disable react/no-unescaped-entities */
 import AnimatedText from "./AnimatedText";
 import AnimatedReveal from "./animatedReveal";
 import { NavLink } from "react-router-dom";
 import Clock from "./clock";
 
 export default function Body() {
-
-  
-  
   return (
     <>
       <section className="hero">
@@ -18,6 +15,7 @@ export default function Body() {
           src="/assets/PurpleFlaredesktop-1.svg"
           alt="purple-flare"
           className="flare-hero"
+          loading="lazy"
         />
         <div className="brief">
           <AnimatedText text="Igniting a Revolution in HR Innovation" />
@@ -27,16 +25,16 @@ export default function Body() {
         </div>
         <div className="hero-body">
           <div className="hero-body-text">
-              <h1 className="title">
-            <AnimatedReveal>
+            <h1 className="title">
+              <AnimatedReveal>
                 getlinked Tech Hackathon <span>1.0</span>
                 <span className="creative-icon">
                   <img src="/assets/creative-icon.svg" alt="creative-icon" />
                 </span>
                 <img src="/assets/chain.svg" alt="chain" className="chain" />
                 <img src="/assets/boom.svg" alt="boom-icon" className="boom" />
-            </AnimatedReveal>
-              </h1>
+              </AnimatedReveal>
+            </h1>
             <AnimatedReveal>
               <p className="hero-text">
                 Participate in getlinked tech Hackathon 2023 stand a chance to
@@ -55,9 +53,14 @@ export default function Body() {
           <div className="guy">
             <AnimatedReveal>
               <img
-                src="/assets/virtual.png"
+                src="/assets/virtual.webp"
                 alt="virtual reality"
                 className="virtual"
+              />
+              <img
+                src="/assets/hackathonguydesktop.webp"
+                alt="hackathon guy"
+                className="hackathon-guy-desktop"
               />
             </AnimatedReveal>
           </div>
@@ -95,7 +98,7 @@ export default function Body() {
             <img src="/assets/arrow.svg" alt="arrow" className="arrow" />
           </div>
         </AnimatedReveal>
-        <div className="introduction-text" >
+        <div className="introduction-text">
           <AnimatedReveal>
             <h2>
               Introduction to getlinked
@@ -105,7 +108,7 @@ export default function Body() {
           <AnimatedReveal>
             <p>
               Our tech hackathon is a melting pot of visionaries, and its
-              purpose is as clear as day: to shape the future. Whether you're a
+              purpose is as clear as day: to shape the future. Whether you 're a
               coding genius, a design maverick, or a concept wizard, you'll have
               the chance to transform your ideas into reality. Solving
               real-world problems, pushing the boundaries of technology, and
@@ -621,7 +624,7 @@ export default function Body() {
               className="trophy-mobile"
             />
             <img
-              src="/assets/trophy-desktop.png"
+              src="/assets/trophy-desktop.webp"
               alt="trophy"
               className="trophy-desktop"
             />

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @use './variables/colors' as *;
 @use './variables/fonts' as *;
 @import './variables/functions';
@@ -187,6 +188,195 @@ header{
             }
            .register-btn{
             width: 172px;
+=======
+@use "./variables/colors" as *;
+@use "./variables/fonts" as *;
+@import "./variables/functions";
+
+header {
+  width: 100%;
+  padding: 26px 12.31%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba($white, $alpha: 0.18);
+  border-bottom: 1px solid rgba($white, $alpha: 0.18);
+  z-index: -5;
+  // position: relative;
+
+  .flare-hero {
+    display: none;
+  }
+  .logo {
+    color: $white;
+    font-size: 15px;
+    font-family: "ClashDisplay-Bold";
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+    span {
+      color: $headlines;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    position: absolute;
+    inset: 0;
+    // transform: translateX(-50%);
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: $background;
+    border-radius: 8px;
+    z-index: 9999;
+    padding: 119px 0 141px 47px;
+    &.active {
+      display: block;
+    }
+    .close {
+      position: absolute;
+      top: 39px;
+      right: 51px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: grid;
+      place-content: center;
+      background: $background;
+      &:hover {
+        cursor: pointer;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        background: linear-gradient(to bottom, $Blue, $Purple);
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding-bottom: 20px;
+      .mobile-nav-link {
+        display: block;
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: $white;
+        font-family: $Inter;
+        font-weight: weight(medium);
+        font-size: 18px;
+        letter-spacing: -1px;
+        &:hover {
+          cursor: pointer;
+          background: linear-gradient(to right, $Blue, $Purple);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+
+    &-btn {
+      text-decoration: none;
+      border: none;
+      margin-top: 29px;
+      padding: 0.85rem 3.1rem;
+      background: linear-gradient(to right, $Blue, $Purple);
+      border-radius: 4px;
+      font-family: $fontfamily;
+      font-weight: weight(regular);
+      font-size: 1rem;
+      color: $white;
+      position: relative;
+      &:hover {
+        cursor: pointer;
+        width: 170px;
+        height: 51px;
+        background: $background;
+        border-radius: 4px;
+        margin: 1px;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          translate: -50% -50%;
+          display: block;
+          background: linear-gradient(to bottom, $Blue, #ff26b9);
+          z-index: -1;
+          width: 172px;
+          height: 53px;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+
+  .hamburger {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    width: 100%;
+    position: relative;
+    padding: 1.5rem 128px 1.5rem 128px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba($white, $alpha: 0.18);
+    z-index: 0;
+
+    .logo {
+      color: $white;
+      font-size: 36px;
+      font-family: "ClashDisplay-Bold";
+      span {
+        color: $headlines;
+      }
+    }
+
+    .desktop-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      ul {
+        list-style: none;
+        margin-right: 65px;
+        .desktop-nav-link {
+          display: inline-block;
+          padding-right: 57px;
+          text-decoration: none;
+          color: $white;
+          font-family: $fontfamily;
+          &:hover {
+            cursor: pointer;
+            background: linear-gradient(to right, $Blue, $Purple);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+      .register-btn {
+        width: 172px;
+>>>>>>> 623b12c (commit)
         height: 53px;
         display: grid;
         place-items: center;
@@ -200,6 +390,7 @@ header{
         color: $white;
         position: relative;
         text-decoration: none;
+<<<<<<< HEAD
             &:hover{
                 cursor: pointer;
                 width: 170px;
@@ -235,3 +426,38 @@ header{
         }
     }
 }
+=======
+        &:hover {
+          cursor: pointer;
+          width: 170px;
+          height: 51px;
+          background: $background;
+          border-radius: 4px;
+          margin: 1px;
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            display: block;
+            background: linear-gradient(to bottom, $Blue, #ff26b9);
+            z-index: -1;
+            width: 172px;
+            height: 53px;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+
+    .hamburger {
+      display: none;
+    }
+
+    .mobile-nav {
+      display: none;
+    }
+  }
+}
+>>>>>>> 623b12c (commit)

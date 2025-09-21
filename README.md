@@ -1,7 +1,11 @@
 
 # Project Title
 
+<<<<<<< HEAD
 [Getlinked.ai Landing Page Hackathon Challenge](https://getlinked-ai-lp-david-og.netlify.app/) 
+=======
+Getlinked.ai Landing Page Hackathon Challenge
+>>>>>>> 623b12c (commit)
 
 
 ## Screenshots

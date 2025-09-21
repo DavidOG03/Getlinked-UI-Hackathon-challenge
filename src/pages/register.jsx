@@ -107,8 +107,13 @@ const Register = ({ isOpen, onClose }) => {
           <p>
             Be part of this movement!
             <span>
+<<<<<<< HEAD
               <img src="/assets/female-emoji.png" alt="female walking emoji" />
               <img src="/assets/male-emoji.png" alt="male walking emoji" />
+=======
+              <img src="/assets/female-emoji.webp" alt="female walking emoji" />
+              <img src="/assets/male-emoji.webp" alt="male walking emoji" />
+>>>>>>> 623b12c (commit)
             </span>
           </p>
           <h4>CREATE YOUR ACCOUNT</h4>
@@ -222,12 +227,20 @@ const Register = ({ isOpen, onClose }) => {
               <img src="/assets/star-2.svg" alt="star" className="star-three" />
               <div className="image">
                 <img
+<<<<<<< HEAD
                   src="/assets/successfully-done-mob.png"
+=======
+                  src="/assets/successfully-done-mob.webp"
+>>>>>>> 623b12c (commit)
                   alt="success icon"
                   className="icon"
                 />
                 <img
+<<<<<<< HEAD
                   src="/assets/successful-man-mob.png"
+=======
+                  src="/assets/successful-man-mob.webp"
+>>>>>>> 623b12c (commit)
                   alt="successful man"
                   className="man"
                 />
@@ -237,7 +250,11 @@ const Register = ({ isOpen, onClose }) => {
                 Yes, it was easy and you did it! check your mail box for next
                 step
                 <span>
+<<<<<<< HEAD
                   <img src="/assets/wink.png" alt="wink-emoji" />
+=======
+                  <img src="/assets/wink.webp" alt="wink-emoji" />
+>>>>>>> 623b12c (commit)
                 </span>
               </p>
               <button className="back-btn" onClick={clearConfirmation} isOpen={isModalOpen} onClose={closeModal}>
@@ -253,19 +270,31 @@ const Register = ({ isOpen, onClose }) => {
         <div className="image">
           <AnimatedReveal>
             <img
+<<<<<<< HEAD
               src="/assets/register-dsktp.png"
+=======
+              src="/assets/register-dsktp.webp"
+>>>>>>> 623b12c (commit)
               alt="grahic designer thumbs up"
             />
           </AnimatedReveal>
         </div>
 
         <img
+<<<<<<< HEAD
           src="/assets/registerflaredsktp-1.png"
+=======
+          src="/assets/registerflaredsktp-1.webp"
+>>>>>>> 623b12c (commit)
           alt="purple flare"
           className="flare-1"
         />
         <img
+<<<<<<< HEAD
           src="/assets/registerflaredsktp-2.png"
+=======
+          src="/assets/registerflaredsktp-2.webp"
+>>>>>>> 623b12c (commit)
           alt="purple flare"
           className="flare-2"
         />
@@ -281,10 +310,17 @@ const Register = ({ isOpen, onClose }) => {
               Be part of this movement!
               <span>
                 <img
+<<<<<<< HEAD
                   src="/assets/female-emoji.png"
                   alt="female walking emoji"
                 />
                 <img src="/assets/male-emoji.png" alt="male walking emoji" />
+=======
+                  src="/assets/female-emoji.webp"
+                  alt="female walking emoji"
+                />
+                <img src="/assets/male-emoji.webp" alt="male walking emoji" />
+>>>>>>> 623b12c (commit)
               </span>
             </p>
 
@@ -404,12 +440,20 @@ const Register = ({ isOpen, onClose }) => {
             <img src="/assets/star-2.svg" alt="star" className="star-three" />
             <div className="image">
               <img
+<<<<<<< HEAD
                 src="/assets/successfully-done-mob.png"
+=======
+                src="/assets/successfully-done-mob.webp"
+>>>>>>> 623b12c (commit)
                 alt="success icon"
                 className="icon"
               />
               <img
+<<<<<<< HEAD
                 src="/assets/successful-man-mob.png"
+=======
+                src="/assets/successful-man-mob.webp"
+>>>>>>> 623b12c (commit)
                 alt="successful man"
                 className="man"
               />
@@ -418,7 +462,11 @@ const Register = ({ isOpen, onClose }) => {
             <p>
               Yes, it was easy and you did it! check your mail box for next step
               <span>
+<<<<<<< HEAD
                 <img src="/assets/wink.png" alt="wink-emoji" />
+=======
+                <img src="/assets/wink.webp" alt="wink-emoji" />
+>>>>>>> 623b12c (commit)
               </span>
             </p>
             <button className="back-btn" onClick={clearConfirmation} isOpen={isModalOpen} onClose={closeModal}>
